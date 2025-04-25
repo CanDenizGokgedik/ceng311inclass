@@ -24,8 +24,9 @@ $(function () {
         if (!this.checkValidity()) {
           e.preventDefault();
           this.reportValidity();
-        } else {        
-          alert("The Form submitted!");
+        } else {
+            e.preventDefault();
+            alert("The Form submitted!");
         }
       });
       
